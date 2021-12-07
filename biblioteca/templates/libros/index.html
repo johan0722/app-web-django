@@ -32,14 +32,14 @@
                     
                     {% for libros in libro %}
                     <tr>
-                        <td>{{ libro.id }}</td>
+                        <td>{{ libros.id }}</td>
                         <td>{{ libros.titulo }}</td>
                         <td>
-                            <img src="{{libros.imagen}}" height="100"   />
+                            <img src="{{libros.imagen.url}}" height="100"   />
                         </td>
                         <td>{{libros.descripcion}}</td>
-                        <td> <a name="" id="" class="btn btn-info" href="{% url 'editar' %}" role="button">Editar</a>  
-                        |  <a name="" id="" class="btn btn-danger" href="#" role="button">Borrar</a> 
+                        <td> <a name="" id="" class="btn btn-info" href="{% url 'editar' libros.id %}" role="button">Editar</a>  
+                        |  <a name="" id="" class="btn btn-danger" href="{% url 'eliminar' libros.id %}" role="button">Borrar</a> 
                         </td>
                     </tr>
 

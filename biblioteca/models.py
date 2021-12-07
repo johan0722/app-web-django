@@ -11,7 +11,7 @@ class Libros(models.Model):
 
 
     def __str__(self):
-        fila = "Titulo " + self.titulo + "-" +"Descripcion" + self.descripcion
+        fila =  "Titulo " + self.titulo + "-" +"Descripcion" + self.descripcion
         return fila
 
     # Esta funcion, nos ayuda a eliminar una imagen del todo, desde el storage dependiendo el nombre

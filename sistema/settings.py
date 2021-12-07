@@ -125,13 +125,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
+# Creamos media root y media url para poder acceder a nuestras imagenes y que se puedan ver en nuestro proyecto
+MEDIA_ROOT = os.path.join(BASE_DIR, '')
+MEDIA_URL = '/imagenes/'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-
-# Creamos media root y media url para poder acceder a nuestras imagenes y que se puedan ver en nuestro proyecto
-MEDIA_ROOT = os.path.join(BASE_DIR, '')
-MEDIA_URL = '/imagene/'
